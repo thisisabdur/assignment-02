@@ -1,3 +1,5 @@
+/* common untilitize */
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 body {
     font-family: 'Work Sans', sans-serif;
@@ -28,9 +30,7 @@ main {
     color: #FFFFFF;
     border: 0;
     font-size: 18px;
-
 }
-
 
 .primary-button:hover{
     width: 160px;
@@ -42,7 +42,6 @@ main {
     font-size: 18px;
     transition: 0.5s;
 }
-
 
 .achivement:hover{
     width: 150px;
@@ -69,6 +68,8 @@ main {
     border: 1px solid #FF900E;
 }
 
+
+
 /* navigation section */
 
 header {
@@ -76,8 +77,8 @@ header {
     height: 950px;
     padding: 2em;
     margin-bottom: 100px;
-    
 }
+
 .nav-section {
     display: flex;
     justify-content: space-between;
@@ -101,13 +102,13 @@ nav li {
 /* navigation area end */
 
 
+/* header area start */
 
 .header-banner {
     text-align: center;
     display: flex;
     margin-top: 85px;
     flex-direction: column;
-
 }
 
 .header-banner h1 {
@@ -127,8 +128,10 @@ nav li {
     width: 75%;
     margin-top: 2em;
 }
+/* header area end */
 
 
+/* feature area start */
 .feature {
     margin-top: 85px;
     margin: auto;
@@ -182,9 +185,9 @@ nav li {
     color: #727272;
 }
 
-/* ------ */
+/* feature area end */
 
-
+/* experience area start */
 .experience {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -239,6 +242,10 @@ nav li {
     margin-bottom: 0;
 }
 
+/* experience area end */
+
+
+/* facts container start */
 .facts-container {
     margin-top: 85px;
     text-align: justify;
@@ -250,7 +257,6 @@ nav li {
     text-align: center;
 }
 
-
 .achivement {
     width: 150px;
     height: 150px;
@@ -258,13 +264,15 @@ nav li {
     border-radius: 8px;
     padding: 20px;
     margin: 20px;
-    
 }
 
+/* facts container end */
+
+
+/* sponsor container start */
 .sponsor-section {
     margin-top: 85px;
 }
-
 
 .sponsor-container {
     text-align: center;
@@ -275,20 +283,20 @@ nav li {
 }
 
 .logo{
-
     height: 50px;
     padding: 20px;
     margin: 20px;
-    
 }
 
 .logo img{
     width: 120px;
     filter: grayscale(100%);
-    
 }
 
+/* sponsor container end */
 
+
+/* footer start */
 footer {
     text-align: center;
     height: 100px;
@@ -301,6 +309,57 @@ footer {
 /* mobile responsiveness */
 
 @media screen and (max-width:576px) {
+    .nav-section {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .logo h2 {
+        text-align: center;
 
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .feature {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    
+    }
+
+    .feature-description {
+        margin-left: 0px;
+    }
+
+    .grid-img {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+
+    .experience {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+     
+    }
+
+    .achivements {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        flex-direction: column;
+    }
+    .facts-container {
+        text-align: center;
+    }
+
+    .sponsors-logo {
+        display: flex;
+        flex-direction: column;
+    }    
 }
