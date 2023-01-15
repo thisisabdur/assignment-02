@@ -1,15 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-* {
-    margin: auto;
+body {
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.primary-color {
+    color: #FF900E;
+}
+
+.secondary-text-color{
+    color: #727272;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.primary-button{
+    width: 160px;
+    height: 54px;
+    background: #FF900E;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border: 0;
+    font-size: 18px;
+
+}
+
+
+.primary-button:hover{
+    width: 160px;
+    height: 54px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    color:#FF900E ;
+    border: 1px solid #FF900E;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+
+.achivement:hover{
+    width: 150px;
+    height: 150px;
+    background-color: #FF900E;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.experience-btn:hover{
+    margin-top: -100px;
+    text-align: center;
+    display: inline-block;
+    width: 220px;
+    height: 100px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    color: #FF900E;
+    line-height: 20px;
+    transition: 0.5s;
+    border: 1px solid #FF900E;
 }
 
 /* navigation section */
+
+header {
+    background: rgba(255, 144, 14, 0.1);
+    height: 950px;
+    padding: 2em;
+    margin-bottom: 100px;
+    
+}
 .nav-section {
-    margin-top: 50px;
     display: flex;
     justify-content: space-between;
-
 }
 
 .logo h2 {
@@ -29,3 +100,207 @@ nav li {
 
 /* navigation area end */
 
+
+
+.header-banner {
+    text-align: center;
+    display: flex;
+    margin-top: 85px;
+    flex-direction: column;
+
+}
+
+.header-banner h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.header-banner p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.header-img img {
+    width: 75%;
+    margin-top: 2em;
+}
+
+
+.feature {
+    margin-top: 85px;
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.grid-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.tm-img img {
+    width: 250px;
+    height: 250px;
+}
+
+.grid-img div {
+    height: calc(50% - 5px/2)
+}
+
+.feature-description {
+    margin-left: 20px;
+}
+
+.light-text {
+    color: #727272;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.bolder-text {
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.feature-colord-text {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+}
+
+.description-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+/* ------ */
+
+
+.experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 85px;
+    justify-items: center;
+    gap: 10px;
+}
+
+.side-border-text {
+    border-left: 2px solid #FF900E;
+}
+
+.arch-img img {
+    height: 100%;
+    width: 80%;
+    margin-left: 20px;
+}
+
+.feature-description-content {
+    margin-left: 140px;
+}
+
+.section-sub-heading{
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+    margin: 0;
+}
+
+.service {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.experience-btn {
+    margin-top: -100px;
+    text-align: center;
+    display: inline-block;
+    width: 220px;
+    height: 100px;
+    background: #FF900E;
+    border-radius: 8px;
+    color: #FFFFFF;
+    line-height: 20px;
+}
+
+.experience-btn h1 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.facts-container {
+    margin-top: 85px;
+    text-align: justify;
+}
+
+.achivements {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.achivement {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+.sponsor-section {
+    margin-top: 85px;
+}
+
+
+.sponsor-container {
+    text-align: center;
+}
+
+.sponsors-logo {
+    display: flex;
+}
+
+.logo{
+
+    height: 50px;
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+.logo img{
+    width: 120px;
+    filter: grayscale(100%);
+    
+}
+
+
+footer {
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    margin-top: 85px;
+}
+
+
+
+/* mobile responsiveness */
+
+@media screen and (max-width:576px) {
+
+
+}
