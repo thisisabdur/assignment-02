@@ -69,6 +69,21 @@ main {
 }
 
 
+.phone, .email:hover{
+    background: #FFFFFF;
+    border-radius: 8px;
+    color: #FF900E;
+    transition: 0.5s;
+    width: 200px;
+    border: 1px solid #FF900E;
+}
+
+
+.logo img:hover{
+    width: 120px;
+    filter: grayscale(0);
+}
+
 
 /* navigation section */
 
@@ -269,6 +284,26 @@ nav li {
 /* facts container end */
 
 
+.contact-container {
+    text-align: center;
+    margin-top: 85px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around
+
+}
+
+.phone, .email {
+    border: 1px solid #FF900E;
+    width: 200px;
+}
+
+.location-map {
+    margin-top: 20px;
+}
+
 /* sponsor container start */
 .sponsor-section {
     margin-top: 85px;
@@ -361,5 +396,11 @@ footer {
     .sponsors-logo {
         display: flex;
         flex-direction: column;
-    }    
+    } 
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+
+    
+    }   
 }
